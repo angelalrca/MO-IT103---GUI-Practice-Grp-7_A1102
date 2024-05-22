@@ -12,8 +12,8 @@ public class GradeOutput extends JFrame {
 
     public GradeOutput(Student student) {
         super("Grade Output");
-        setSize(600, 400); // Increased window width to accommodate larger text fields
-        setLocationRelativeTo(null); // Center the window
+        setSize(600, 400);
+        setLocationRelativeTo(null);
 
         student.computeAverage();
 
@@ -25,15 +25,15 @@ public class GradeOutput extends JFrame {
         lblAveGrade = new JLabel("Average Grade:");
 
         txtStudentName = new JTextField(30);
-        txtStudentName.setEnabled(true); // Enable for input
+        txtStudentName.setEnabled(true);
         txtStudentName.setText(student.getStudentName());
 
         txtStudentNo = new JTextField(30);
-        txtStudentNo.setEnabled(true); // Enable for input
+        txtStudentNo.setEnabled(true);
         txtStudentNo.setText(student.getStudentNumber());
 
         txtMilestone1 = new JTextField(10);
-        txtMilestone1.setEnabled(true); // Enable for input
+        txtMilestone1.setEnabled(true);
         txtMilestone1.setText(student.getMilestone1());
 
         txtMilestone2 = new JTextField(10);
@@ -41,7 +41,7 @@ public class GradeOutput extends JFrame {
         txtMilestone2.setText(student.getMilestone2());
 
         txtTerminalAssessment = new JTextField(10);
-        txtTerminalAssessment.setEnabled(true); // Enable for input
+        txtTerminalAssessment.setEnabled(true);
         txtTerminalAssessment.setText(student.getTerminalAssessment());
 
         txtAveGrade = new JTextField(10);

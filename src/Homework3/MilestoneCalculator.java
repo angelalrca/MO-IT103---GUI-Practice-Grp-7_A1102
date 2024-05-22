@@ -15,8 +15,7 @@ public class MilestoneCalculator extends JFrame {
         setSize(500, 400);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null); 
-
-        // Create components
+        
         lblStudentName = new JLabel("Student Name:");
         txtStudentName = new JTextField(30);
         lblStudentNo = new JLabel("Student No:");
@@ -32,13 +31,11 @@ public class MilestoneCalculator extends JFrame {
         clearButton = new JButton("Clear");
         exitButton = new JButton("Exit");
 
-        // Define panel and layout
         JPanel panel = new JPanel(new GridBagLayout());
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.insets = new Insets(5, 5, 5, 5);
         gbc.anchor = GridBagConstraints.WEST;
 
-        // Add components to panel
         gbc.gridx = 0;
         gbc.gridy = 0;
         panel.add(lblStudentName, gbc);
@@ -81,10 +78,8 @@ public class MilestoneCalculator extends JFrame {
         gbc.gridy = 7;
         panel.add(exitButton, gbc);
 
-        // Add panel to frame
         add(panel);
 
-        // Add ActionListener to buttons
         calculateButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 calculateGrade();
